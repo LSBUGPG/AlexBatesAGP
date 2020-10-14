@@ -12,15 +12,13 @@ public class LoadLevelAfterTime : MonoBehaviour
     
     private float timeElapsed;
 
-    Private Update()
+    private void Update()
     {
         timeElapsed += Time.deltaTime;
 
         if (timeElapsed > delayBeforeLoading)
         {
-            SceneManager LoadScene(sceneNameToLoad);
+            SceneManager.LoadScene(sceneNameToLoad);
         }
-        
-
     }
 }
